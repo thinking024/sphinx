@@ -15,11 +15,16 @@ release = '0.0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 # source_suffix = ['.rst', '.md', '.MD']
+source_parsers = {
+    '.md': 'recommonmark.parser.CommonMarkParser',
+}
+
+source_suffix = ['.rst', '.md']
 
 extensions = [
-     'recommonmark',
-     'sphinx_markdown_tables'
- ]
+    'recommonmark',
+    'sphinx_markdown_tables'
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
