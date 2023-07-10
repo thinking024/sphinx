@@ -8,10 +8,16 @@ Welcome to sphinx_test's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: introduction:
 
    1st_dir/index
    about
+
+.. toctree::
+   :maxdepth: 4
+   :caption: api reference:
+
+   modules
 
 
 
